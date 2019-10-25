@@ -33,6 +33,9 @@ public class Database {
             return balance;
         }
 
+        public void deposit(BigDecimal input){
+            balance = balance.add(input);
+        }
 
     }
 }

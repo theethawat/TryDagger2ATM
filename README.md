@@ -5,10 +5,10 @@ Tutorial ATM ใน [Dagger.dev](https://dagger.dev) โดยทดลองด
 
 ## Dagger Architecture
 Dagger จะมีองค์ประกอบหลักคือ
-- Componentใน Repository นี้ก็จะเป็นพวก Interface, Abstract Class พวก Factory ทั้งหลาย ที่มี Annotate ว่า @Component 
+- Component ใน Repository นี้ก็จะเป็นพวก Interface พวก Factory ทั้งหลาย ที่มี Annotate ว่า @Component 
 ข้างหน้า
 - Module จะเป็นตัวคอยบอก Dagger ว่าอะไรที่มันขึ้นต่อ Component นี้ เจอ Component นี้ไปที่ไหน เพราะพวก Component เป็น Interface 
-  หรือ Abstract Class มัน Inject เองไม่ได้ ตัวนี้เหมือนตัวจัดการ 
+  มัน Inject เองไม่ได้ ตัวนี้เหมือนตัวจัดการ 
 - Provide ตัวทำ Class ให้เป็นตัวป้อน Dependency
 
 ## คำศัพท์และคำสั่งต่างๆ
