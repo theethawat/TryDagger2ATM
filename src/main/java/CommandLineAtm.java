@@ -1,4 +1,6 @@
 import dagger.Component;
+import dagger.internal.DaggerCollections;
+
 import java.util.Scanner;
 public class CommandLineAtm
 {
