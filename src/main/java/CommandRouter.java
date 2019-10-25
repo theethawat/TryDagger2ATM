@@ -13,15 +13,14 @@ import static com.jetbrains.jsonSchema.JsonPointerUtil.split;
  * Route input strings to them base
  * */
 final class CommandRouter {
-    @Inject
-    CommandRouter(Command command){}
 
-    //Traditional 1 Command Router
-    private final Map<String,Command> commands = new HashMap<>();
+
+    //Multi Dependencies
+    private final Map<String,Command> commands ;
 
     @Inject
-    CommandRouter(HelloWorldCommand helloWorldCommand){
-        commands.put(helloWorldCommand.key(),helloWorldCommand);
+    CommandRouter(Map<String,Command> commands){
+        this.commands = commands;
     }
 
 
